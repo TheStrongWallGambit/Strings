@@ -3,25 +3,41 @@ import java.util.*;
 public class stringIntro{
     public static void main(String[] args){
 
+        double absolute = Math.abs(8.0);
+        System.out.println(absolute);
+
+        double exponent = Math.pow(5, 4);
+        System.out.println(exponent);
+
+        double sqrt = Math.sqrt(90);
+        System.out.println(sqrt);
+
+        double randNUmber = Math.random();//0.0 tp .9999999999999
+
         int num =5;
         double weight =7.89;
 
         Integer number = new Integer(5);//unboxing
         Integer number2 =5; // auto unboxing
 
-        Double w = new Double(7.89); // boxing
+        Double wBox = new Double(7.89); // boxing
         Double W = 7.89;// auto boxing
 
         System.out.println(number2 == num); //auto-unboxing
-        System.out.println(w == weight); //auto-unboxing
+        System.out.println(wBox == weight); //auto-unboxing
 
-        double newNum = w; //auto-unboxing
+        double newNum = wBox; //auto-unboxing
         int age = number2; // auto-unboxing
 
         int year = number2.intValue(); //unboxing
         int average = W.doubleValue(); //unboxing
 
-        System.out.println(number2.MIN_VALUE);
+        System.out.println(number2.MAX_VALUE);
+
+        String s =new String("S");
+        int v= Integer.parseInt(s);
+        System.out.print(v);
+        // .MAX_VALUE
         String address = new String("I Grizzly Way, Granite Bay, CA");//AP Test Way
 
 
